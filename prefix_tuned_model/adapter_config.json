@@ -1,0 +1,15 @@
+{
+  "auto_mapping": null,
+  "base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct",
+  "encoder_hidden_size": 512,
+  "inference_mode": true,
+  "num_attention_heads": 4,
+  "num_layers": 28,
+  "num_transformer_submodules": 1,
+  "num_virtual_tokens": 30,
+  "peft_type": "PREFIX_TUNING",
+  "prefix_projection": false,
+  "revision": null,
+  "task_type": "CAUSAL_LM",
+  "token_dim": 512
+}
