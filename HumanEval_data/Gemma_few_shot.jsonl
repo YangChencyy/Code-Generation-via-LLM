@@ -1,0 +1,164 @@
+{"task_id": "HumanEval/0", "completion": ["\nhas_close_elements(numbers: List[float], threshold: float) -> bool:\n"]}
+{"task_id": "HumanEval/1", "completion": ["\nseparate_paren_groups('( ) (( )) (( )( ))')\n"]}
+{"task_id": "HumanEval/2", "completion": ["\ndef truncate_number(number: float) -> float:\n", "\n# Example usage\ntruncate_number(3.5)  # Output: 0.5\ntruncate_number(5.0)  # Output: 0.0\n"]}
+{"task_id": "HumanEval/3", "completion": ["\ndef below_zero(operations: List[int]) -> bool:\n"]}
+{"task_id": "HumanEval/4", "completion": ["\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n", "\nmean_absolute_deviation([1.0, 2.0, 3.0, 4.0])  # Output: 1.0\n"]}
+{"task_id": "HumanEval/5", "completion": ["\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n"]}
+{"task_id": "HumanEval/6", "completion": ["\ndef parse_nested_parens(paren_string: str) -> List[int]:\n"]}
+{"task_id": "HumanEval/7", "completion": ["\nfilter_by_substring(strings: List[str], substring: str) -> List[str]:\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n", "\nstrings = []\nfilter_by_substring(strings, 'a')  # Output: []\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'cde'\nfilter_by_substring(strings, substring)  # Output: ['cde']\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n", "\nstrings = ['abc', 'bacd', 'cde', 'array']\nsubstring = 'a'\nfilter_by_substring(strings, substring)  # Output: ['abc', 'bacd', 'array']\n"]}
+{"task_id": "HumanEval/8", "completion": ["\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n", "\n>>> sum_product([])\n(0, 1)\n", "\n>>> sum_product([1, 2, 3, 4])\n(10, 24)\n", "\n>>> sum_product([1, 2, 3, 4, 5])\n(16, 80)\n", "\n>>> sum_product([0, 0, 0])\n(0, 1)\n"]}
+{"task_id": "HumanEval/9", "completion": ["\ndef rolling_max(numbers: List[int]) -> List[int]:\n"]}
+{"task_id": "HumanEval/10", "completion": ["\ndef make_palindrome(string: str) -> str:\n", "\n>>> make_palindrome('')\n''\n>>> make_palindrome('cat')\n'catac'\n>>> make_palindrome('cata')\n'catac'\n", "\ndef make_palindrome(string: str) -> str:\n", "\n"]}
+{"task_id": "HumanEval/11", "completion": ["\nstring_xor(a: str, b: str) -> str\n"]}
+{"task_id": "HumanEval/12", "completion": ["\ndef longest(strings: List[str]) -> Optional[str]:\n"]}
+{"task_id": "HumanEval/13", "completion": ["\ndef greatest_common_divisor(a: int, b: int) -> int:\n", "\ngreatest_common_divisor(3, 5)  # Output: 1\ngreatest_common_divisor(25, 15)  # Output: 5\n"]}
+{"task_id": "HumanEval/14", "completion": ["\nall_prefixes(string: str) -> List[str]:\n", "\nall_prefixes('abc')\n", "\nall_prefixes('abcde')\n"]}
+{"task_id": "HumanEval/15", "completion": ["\ndef string_sequence(n: int) -> str:\n", "\nstring_sequence(0)  # Output: '0'\nstring_sequence(5)  # Output: '0 1 2 3 4 5'\n", "\ndef string_sequence(n: int) -> str:\n"]}
+{"task_id": "HumanEval/16", "completion": ["\ndef count_distinct_characters(string: str) -> int:\n", "\ndef count_distinct_characters(string: str) -> int:\n"]}
+{"task_id": "HumanEval/17", "completion": ["\ndef parse_music(music_string: str) -> List[int]:\n", "\nparse_music('o o| .| o| o| .| .| .| .| o o')\n"]}
+{"task_id": "HumanEval/18", "completion": ["\ndef how_many_times(string: str, substring: str) -> int:\n", "\nhow_many_times('', 'a')  # Output: 0\nhow_many_times('aaa', 'a')  # Output: 3\nhow_many_times('aaaa', 'aa')  # Output: 3\n", "\n"]}
+{"task_id": "HumanEval/19", "completion": ["\ndef sort_numbers(numbers: str) -> str:\n", "\nsort_numbers('three one five')  # Output: 'one three five'\nsort_numbers('four four')  # Output: 'four four'\nsort_numbers('zero')  # Output: 'zero'\n"]}
+{"task_id": "HumanEval/20", "completion": ["\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n", "\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    # Calculate the pairwise distances between all pairs of numbers\n    distances = []\n    for i in range(len(numbers)):\n        for j in range(i, len(numbers)):\n            if i != j:\n                distances.append(abs(numbers[i] - numbers[j]))\n\n    # Find the two closest numbers\n    closest_distance = min(distances)\n    closest_numbers = [numbers[i] for i in range(len(numbers)) if abs(numbers[i] - numbers[j]) == closest_distance else None for j in range(len(numbers))]\n\n    # Return the two closest numbers in order\n    return sorted(closest_numbers)\n"]}
+{"task_id": "HumanEval/21", "completion": ["\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n", "\nrescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])  # Output: [0.0, 0.25, 0.5, 0.75, 1.0]\n"]}
+{"task_id": "HumanEval/22", "completion": ["\nfilter_integers(values: List[Any]) -> List[int]:\n", "\nfilter_integers(['a', 3.14, 5])  # Output: [5]\nfilter_integers([1, 2, 3, 'abc', {}, []])  # Output: [1, 2, 3]\n"]}
+{"task_id": "HumanEval/23", "completion": ["\ndef strlen(string: str) -> int:\n", "\ndef strlen(string: str) -> int:\n", "\n>>> strlen('')\n0\n>>> strlen('abc')\n3\n", "\n>>> strlen(\"abc\")\n3\n>>> strlen(\"abcabc\")\n6\n", "\n>>> strlen(\"a\")\n1\n", "\n>>> strlen(\"ab\")\n2\n", "\n>>> strlen(\"abcde\")\n5\n", "\n>>> strlen(\"abcdeabc\")\n9\n", "\n>>> strlen(\"abcdeabcde\")\n13\n", "\n>>> strlen(\"a b c\")\n3\n", "\n>>> strlen(\"a b c d\")\n4\n", "\n>>> strlen(\"a b c d e\")\n5\n", "\n>>> strlen(\"a b c d e f\")\n6\n"]}
+{"task_id": "HumanEval/24", "completion": ["\ndef largest_divisor(n: int) -> int:\n", "\ndef largest_divisor(n: int) -> int:\n    largest_divisor = int(n ** 0.5)\n\n    return largest_divisor if n % largest_divisor == 0 else largest_divisor - 1\n"]}
+{"task_id": "HumanEval/25", "completion": ["\ndef factorize(n: int) -> List[int]:\n", "\nfactorize(8)  # Output: [2, 2, 2]\nfactorize(25)  # Output: [5, 5]\nfactorize(70)  # Output: [2, 5, 7]\n", "\ndef factorize(n: int) -> List[int]:\n    factors = []\n    for i in range(1, int(n**0.5) + 1):\n        if n % i == 0:\n            factors.append(i)\n            n //= i\n    return factors\n"]}
+{"task_id": "HumanEval/26", "completion": ["\nremove_duplicates(numbers: List[int]) -> List[int]:\n", "\nremove_duplicates([1, 2, 3, 2, 4]) == [1, 3, 4]\n"]}
+{"task_id": "HumanEval/27", "completion": ["\ndef flip_case(string: str) -> str:\n"]}
+{"task_id": "HumanEval/28", "completion": ["\ndef concatenate(strings: List[str]) -> str:\n", "\nstrings = ['a', 'b', 'c']\nconcatenate(strings)  # Output: 'abc'\n", "\nstrings = []\nconcatenate(strings)  # Output: ''\n", "\nstrings = ['a']\nconcatenate(strings)  # Output: 'a'\n"]}
+{"task_id": "HumanEval/29", "completion": ["\nfilter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n", "\nfilter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')\n", "\nfilter_by_prefix([], 'a')\n", "\nfilter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'cde')\n", "\nfilter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'array')\n", "\nfilter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')\n", "\nfilter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'cde')\n"]}
+{"task_id": "HumanEval/30", "completion": ["\ndef get_positive(l: list):\n"]}
+{"task_id": "HumanEval/31", "completion": ["\ndef is_prime(n):\n", "\n>>> is_prime(6)\nFalse\n>>> is_prime(101)\nTrue\n"]}
+{"task_id": "HumanEval/32", "completion": ["\nimport math\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    \"\"\"\n"]}
+{"task_id": "HumanEval/33", "completion": ["\ndef sort_third(l: list):\n", "\nsort_third([1, 2, 3])  # Output: [1, 2, 3]\nsort_third([5, 6, 3, 4, 8, 9, 2])  # Output: [2, 6, 3, 4, 8, 9, 5]\n"]}
+{"task_id": "HumanEval/34", "completion": ["\nunique(l: list)\n", "\nunique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n", "\nunique([1, 2, 2, 3, 3, 4, 5])\n", "\nunique([1, 1, 1, 2, 2, 2, 3, 3, 3])\n", "\nunique([])\n", "\nunique(None)\n", "\nunique([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n", "\n"]}
+{"task_id": "HumanEval/35", "completion": ["\ndef max_element(l: list):\n", "\nmax_element([1, 2, 3])  # Output: 3\nmax_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])  # Output: 123\n", "\ndef max_element(l: list):\n"]}
+{"task_id": "HumanEval/36", "completion": ["\ndef fizz_buzz(n: int):\n", "\n"]}
+{"task_id": "HumanEval/37", "completion": ["\ndef sort_even(l: list):\n"]}
+{"task_id": "HumanEval/38", "completion": []}
+{"task_id": "HumanEval/39", "completion": ["\ndef prime_fib(n: int):\n", "\n"]}
+{"task_id": "HumanEval/40", "completion": ["\ndef triples_sum_to_zero(l: list):\n"]}
+{"task_id": "HumanEval/41", "completion": ["\ndef car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n    # Create two sets of numbers for the left-moving and right-moving cars.\n    left_cars = range(1, n + 1)\n    right_cars = range(n, 0, -1)\n\n    # Find the intersection of the two sets.\n    intersection = set(left_cars) & set(right_cars)\n\n    # Return the number of elements in the intersection.\n    return len(intersection)\n"]}
+{"task_id": "HumanEval/42", "completion": ["\ndef incr_list(l: list):\n", "\n>>> incr_list([1, 2, 3])\n[2, 3, 4]\n", "\n>>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])\n[6, 4, 6, 3, 4, 4, 10, 1, 124]\n", "\n>>> incr_list([1, 2, 3]) == [2, 3, 4]\nTrue\n", "\n>>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123]) == [6, 4, 6, 3, 4, 4, 10, 1, 124]\nTrue\n", "\n>>> incr_list([]) == []\nTrue\n", "\n>>> incr_list(None) is None\nTrue\n", "\n>>> incr_list([1, 2, 3], 2)\n[3, 4, 5]\n", "\n>>> incr_list([1, 2, 3], 3)\n[4, 5, 6]\n", "\n>>> incr_list([1, 2, 3], 4)\n[5, 6, 7]\n", "\n>>> incr_list([1, 2, 3], 5)\n[6, 7, 8]\n", "\n", "\n>>> incr_list([]) == []\nTrue\n", "\n>>> incr_list(None) is None\nTrue\n"]}
+{"task_id": "HumanEval/43", "completion": ["\ndef pairs_sum_to_zero(l):\n"]}
+{"task_id": "HumanEval/44", "completion": ["\ndef change_base(x: int, base: int):\n", "\ndef change_base(x: int, base: int):\n"]}
+{"task_id": "HumanEval/45", "completion": []}
+{"task_id": "HumanEval/46", "completion": ["\ndef fib4(n: int):\n"]}
+{"task_id": "HumanEval/47", "completion": ["\ndef median(l: list):\n", "\n# Example usage\nmedian([3, 1, 2, 4, 5])  # Output: 3.0\nmedian([-10, 4, 6, 1000, 10, 20])  # Output: 15.0\n"]}
+{"task_id": "HumanEval/48", "completion": ["\ndef is_palindrome(text: str):\n", "\nis_palindrome('')  # True\nis_palindrome('aba')  # True\nis_palindrome('aaaaa')  # True\nis_palindrome('zbcd')  # False\n"]}
+{"task_id": "HumanEval/49", "completion": []}
+{"task_id": "HumanEval/50", "completion": ["\ndef encode_shift(s: str):\n    \"\"\"\n    returns encoded string by shifting every character by 5 in the alphabet.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) + 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n\ndef decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n"]}
+{"task_id": "HumanEval/51", "completion": ["\ndef remove_vowels(text):\n"]}
+{"task_id": "HumanEval/52", "completion": ["\ndef below_threshold(l: list, t: int):\n"]}
+{"task_id": "HumanEval/53", "completion": []}
+{"task_id": "HumanEval/54", "completion": ["\ndef same_chars(s0: str, s1: str):\n", "\nsame_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')  # True\nsame_chars('abcd', 'dddddddabc')  # True\nsame_chars('dddddddabc', 'abcd')  # True\nsame_chars('eabcd', 'dddddddabc')  # False\nsame_chars('abcd', 'dddddddabce')  # False\nsame_chars('eabcdzzzz', 'dddzzzzzzzddddabc')  # False\n"]}
+{"task_id": "HumanEval/55", "completion": ["\ndef fib(n: int):\n", "\ndef fib(n: int):\n    # Memoization table\n    memo = {}\n\n    # Base case\n    if n <= 1:\n        return n\n\n    # Recursive case\n    else:\n        # Check if the value is already stored in the memoization table\n        if n not in memo:\n            # Calculate the value recursively\n            value = fib(n-1) + fib(n-2)\n\n            # Store the value in the memoization table\n            memo[n] = value\n\n        # Return the stored value\n        return memo[n]\n"]}
+{"task_id": "HumanEval/56", "completion": ["\ndef correct_bracketing(brackets: str):\n", "\n>>> correct_bracketing(\"<\")\nFalse\n>>> correct_bracketing(\"<>\")\nTrue\n>>> correct_bracketing(\"<<><>>\")\nTrue\n>>> correct_bracketing(\"><<>\")\nFalse\n"]}
+{"task_id": "HumanEval/57", "completion": ["\ndef monotonic(l: list):\n"]}
+{"task_id": "HumanEval/58", "completion": []}
+{"task_id": "HumanEval/59", "completion": ["\ndef largest_prime_factor(n: int):\n", "\nlargest_prime_factor(13195)  # Output: 29\nlargest_prime_factor(2048)  # Output: 2\n"]}
+{"task_id": "HumanEval/60", "completion": ["\ndef sum_to_n(n: int):\n", "\nsum_to_n(30)  # Output: 465\nsum_to_n(100)  # Output: 5050\nsum_to_n(5)  # Output: 15\nsum_to_n(10)  # Output: 55\nsum_to_n(1)  # Output: 1\n", "\ndef sum_to_n(n: int):\n"]}
+{"task_id": "HumanEval/61", "completion": ["\ndef correct_bracketing(brackets: str):\n", "\ncorrect_bracketing(\"(\")  # False\ncorrect_bracketing(\"()\")  # True\ncorrect_bracketing(\"(()())\")  # True\ncorrect_bracketing(\")(()\")  # False\n"]}
+{"task_id": "HumanEval/62", "completion": ["\ndef derivative(xs: list):\n"]}
+{"task_id": "HumanEval/63", "completion": ["\ndef fibfib(n: int):\n"]}
+{"task_id": "HumanEval/64", "completion": []}
+{"task_id": "HumanEval/65", "completion": ["\ndef circular_shift(x, shift):\n", "\n>>> circular_shift(12, 1)\n\"21\"\n>>> circular_shift(12, 2)\n\"12\"\n"]}
+{"task_id": "HumanEval/66", "completion": []}
+{"task_id": "HumanEval/67", "completion": []}
+{"task_id": "HumanEval/68", "completion": []}
+{"task_id": "HumanEval/69", "completion": []}
+{"task_id": "HumanEval/70", "completion": ["\nstrange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\nstrange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\nstrange_sort_list([]) == []\n"]}
+{"task_id": "HumanEval/71", "completion": ["\nprint(triangle_area(3, 4, 5))  # Output: 6.00\nprint(triangle_area(1, 2, 10))  # Output: -1\n", "\ndef triangle_area(a, b, c):\n"]}
+{"task_id": "HumanEval/72", "completion": []}
+{"task_id": "HumanEval/73", "completion": []}
+{"task_id": "HumanEval/74", "completion": []}
+{"task_id": "HumanEval/75", "completion": ["\ndef is_multiply_prime(a):\n", "\nis_multiply_prime(30) == True\n30 = 2 * 3 * 5\n"]}
+{"task_id": "HumanEval/76", "completion": ["\ndef is_simple_power(x, n):\n"]}
+{"task_id": "HumanEval/77", "completion": ["\ndef iscube(a):\n"]}
+{"task_id": "HumanEval/78", "completion": []}
+{"task_id": "HumanEval/79", "completion": []}
+{"task_id": "HumanEval/80", "completion": []}
+{"task_id": "HumanEval/81", "completion": ["\nnumerical_letter_grade(grades)\n"]}
+{"task_id": "HumanEval/82", "completion": ["\ndef prime_length(string):\n"]}
+{"task_id": "HumanEval/83", "completion": ["\ndef starts_one_ends(n):\n", "\ndef starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\"\n    count = 0\n    # Iterate over all numbers from 1 to n\n    for i in range(1, n + 1):\n        # Check if the number starts with 1\n        if str(i).startswith('1'):\n            count += 1\n        # Check if the number ends with 1\n        elif str(i).endswith('1'):\n            count += 1\n    return count\n"]}
+{"task_id": "HumanEval/84", "completion": []}
+{"task_id": "HumanEval/85", "completion": []}
+{"task_id": "HumanEval/86", "completion": []}
+{"task_id": "HumanEval/87", "completion": []}
+{"task_id": "HumanEval/88", "completion": []}
+{"task_id": "HumanEval/89", "completion": []}
+{"task_id": "HumanEval/90", "completion": ["\ndef next_smallest(lst):\n", "\nnext_smallest([1, 2, 3, 4, 5]) == 2\nnext_smallest([5, 1, 4, 3, 2]) == 2\nnext_smallest([]) == None\nnext_smallest([1, 1]) == None\n"]}
+{"task_id": "HumanEval/91", "completion": ["\ndef is_bored(S):\n"]}
+{"task_id": "HumanEval/92", "completion": ["\ndef any_int(x, y, z):\n    return bool((int(x) == int(y) + int(z)) and isinstance(x, int) and isinstance(y, int) and isinstance(z, int)\n"]}
+{"task_id": "HumanEval/93", "completion": []}
+{"task_id": "HumanEval/94", "completion": []}
+{"task_id": "HumanEval/95", "completion": []}
+{"task_id": "HumanEval/96", "completion": ["\ndef count_up_to(n):\n", "\ncount_up_to(5)  # Output: [2, 3]\ncount_up_to(11)  # Output: [2, 3, 5, 7]\ncount_up_to(0)  # Output: []\ncount_up_to(20)  # Output: [2, 3, 5, 7, 11, 13, 17, 19]\ncount_up_to(1)  # Output: []\ncount_up_to(18)  # Output: [2, 3, 5, 7, 11, 13, 17]\n"]}
+{"task_id": "HumanEval/97", "completion": []}
+{"task_id": "HumanEval/98", "completion": []}
+{"task_id": "HumanEval/99", "completion": []}
+{"task_id": "HumanEval/100", "completion": ["\ndef make_a_pile(n):\n", "\ndef make_a_pile(n):\n    \"\"\"\n    Given a positive integer n, you have to make a pile of n levels of stones.\n    The first level has n stones.\n    The number of stones in the next level is:\n        - the next odd number if n is odd.\n        - the next even number if n is even.\n    Return the number of stones in each level in a list, where element at index\n    i represents the number of stones in the level (i+1).\n\n    Examples:\n    >>> make_a_pile(3)\n    [3, 5, 7]\n    \"\"\"\n\n    # Calculate the number of stones in each level\n    stones = [n]\n    while stones[-1] < n:\n        n_stones = stones[-1] + 2 if stones[-1] % 2 == 0 else stones[-1] + 1\n        stones.append(n_stones)\n\n    return stones\n"]}
+{"task_id": "HumanEval/101", "completion": []}
+{"task_id": "HumanEval/102", "completion": ["\ndef choose_num(x, y):\n", "\ndef choose_num(x, y):\n    if x % 2 != 0 or y % 2 != 0:\n        return -1\n\n    even_num = max(x, y) // 2\n\n    if even_num * 2 <= y and even_num * 2 >= x:\n        return even_num * 2\n    else:\n        return -1\n"]}
+{"task_id": "HumanEval/103", "completion": ["\nrounded_avg(1, 5)  # Output: \"0b11\"\nrounded_avg(7, 5)  # Output: -1\nrounded_avg(10, 20)  # Output: \"0b1111\"\nrounded_avg(20, 33)  # Output: \"0b11010\"\n"]}
+{"task_id": "HumanEval/104", "completion": []}
+{"task_id": "HumanEval/105", "completion": ["\narr = [2, 1, 1, 4, 5, 8, 2, 3]\nby_length(arr)  # Output: ['One', 'One', 'Two', 'Two', 'Three', 'Four', 'Five', 'Eight']\n\narr = []\nby_length(arr)  # Output: []\n\narr = [1, -1, 55]\nby_length(arr)  # Output: ['One']\n"]}
+{"task_id": "HumanEval/106", "completion": []}
+{"task_id": "HumanEval/107", "completion": ["\ndef even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n    # Iterate over the range(1, n) and count the number of even and odd integer palindromes.\n    even_palindrome = 0\n    odd_palindrome = 0\n    for i in range(1, n + 1):\n        # Check if the number is an integer palindrome.\n        if str(i) == str(i)[::-1]:\n            # Check if the number is even.\n            if i % 2 == 0:\n                even_palindrome += 1\n            else:\n                odd_palindrome += 1\n\n    # Return the number of even and odd integer palindromes.\n    return even_palindrome, odd_palindrome\n"]}
+{"task_id": "HumanEval/108", "completion": ["\ndef count_nums(arr):\n", "\ncount_nums([])  # Output: 0\ncount_nums([-1, 11, -11])  # Output: 1\ncount_nums([1, 1, 2])  # Output: 3\n"]}
+{"task_id": "HumanEval/109", "completion": []}
+{"task_id": "HumanEval/110", "completion": []}
+{"task_id": "HumanEval/111", "completion": ["\ndef histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n\n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\"\n\n    # Create a dictionary to store the letter counts\n    letter_counts = {}\n\n    # Split the string into individual letters and convert them to lowercase\n    letters = test.split()\n    letters = [letter.lower() for letter in letters]\n\n    # Iterate over the letters and update the dictionary\n    for letter in letters:\n        if letter not in letter_counts:\n            letter_counts[letter] = 0\n        letter_counts[letter] += 1\n\n    # Return the dictionary of letter counts\n    return letter_counts\n"]}
+{"task_id": "HumanEval/112", "completion": []}
+{"task_id": "HumanEval/113", "completion": ["\ndef odd_count(lst):\n"]}
+{"task_id": "HumanEval/114", "completion": ["\ndef minSubArraySum(nums):\n"]}
+{"task_id": "HumanEval/115", "completion": ["\ndef max_fill(grid, capacity):\n    import math\n\n    # Calculate the total water in each row\n    total_water = []\n    for i in range(len(grid)):\n        total_water.append(sum(grid[i]))\n\n    # Calculate the maximum water that can be extracted from each well\n    max_extraction = []\n    for i in range(len(grid)):\n        max_extraction.append(min(total_water[i], capacity))\n\n    # Calculate the number of times the buckets need to be lowered\n    num_lowerings = sum(max_extraction)\n\n    return num_lowerings\n"]}
+{"task_id": "HumanEval/116", "completion": []}
+{"task_id": "HumanEval/117", "completion": []}
+{"task_id": "HumanEval/118", "completion": []}
+{"task_id": "HumanEval/119", "completion": []}
+{"task_id": "HumanEval/120", "completion": []}
+{"task_id": "HumanEval/121", "completion": ["\ndef solution(lst):\n"]}
+{"task_id": "HumanEval/122", "completion": []}
+{"task_id": "HumanEval/123", "completion": []}
+{"task_id": "HumanEval/124", "completion": ["\ndef valid_date(date):\n"]}
+{"task_id": "HumanEval/125", "completion": []}
+{"task_id": "HumanEval/126", "completion": []}
+{"task_id": "HumanEval/127", "completion": []}
+{"task_id": "HumanEval/128", "completion": []}
+{"task_id": "HumanEval/129", "completion": []}
+{"task_id": "HumanEval/130", "completion": []}
+{"task_id": "HumanEval/131", "completion": []}
+{"task_id": "HumanEval/132", "completion": []}
+{"task_id": "HumanEval/133", "completion": []}
+{"task_id": "HumanEval/134", "completion": ["\ndef check_if_last_char_is_a_letter(txt):\n"]}
+{"task_id": "HumanEval/135", "completion": []}
+{"task_id": "HumanEval/136", "completion": []}
+{"task_id": "HumanEval/137", "completion": ["\ndef compare_one(a, b):\n"]}
+{"task_id": "HumanEval/138", "completion": ["\ndef is_equal_to_sum_even(n):\n"]}
+{"task_id": "HumanEval/139", "completion": ["\ndef special_factorial(n):\n", "\ndef special_factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * special_factorial(n-1)\n"]}
+{"task_id": "HumanEval/140", "completion": ["\nimport re\n\ndef fix_spaces(text):\n    pattern = r\"\\s{2,}\"\n    text = re.sub(pattern, \"-\", text)\n    text = re.sub(\" \", \"_\", text)\n    return text\n"]}
+{"task_id": "HumanEval/141", "completion": ["\ndef file_name_check(file_name):\n", "\ndef file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\"\n\n    # Check if the file name contains more than three digits\n    if len(re.findall(\"[0-9]\", file_name)) > 3:\n        return \"No\"\n\n    # Check if the file name contains exactly one dot\n    if len(re.findall(\"\\.\", file_name)) != 1:\n        return \"No\"\n\n    # Check if the substring before the dot starts with a letter from the Latin alphabet\n    if not re.match(\"^[a-zA-Z]+\", file_name.split(\".\")[0]):\n        return \"No\"\n\n    # Check if the substring after the dot is one of the valid extensions\n    if file_name.split(\".\")[1].lower() not in [\"txt\", \"exe\", \"dll\"]:\n        return \"No\"\n\n    # If all conditions are met, return 'Yes'\n    return \"Yes\"\n"]}
+{"task_id": "HumanEval/142", "completion": ["\nsum_squares([1, 2, 3])  # Output: 6\nsum_squares([])  # Output: 0\nsum_squares([-1, -5, 2, -1, -5])  # Output: -126\n"]}
+{"task_id": "HumanEval/143", "completion": []}
+{"task_id": "HumanEval/144", "completion": ["\ndef simplify(x, n):\n"]}
+{"task_id": "HumanEval/145", "completion": ["\ndef order_by_points(nums):\n"]}
+{"task_id": "HumanEval/146", "completion": []}
+{"task_id": "HumanEval/147", "completion": []}
+{"task_id": "HumanEval/148", "completion": ["\ndef bf(planet1, planet2):\n"]}
+{"task_id": "HumanEval/149", "completion": ["\nassert sorted_list_sum([\"aa\", \"a\", \"aaa\"]) == [\"aa\"]\nassert sorted_list_sum([\"ab\", \"a\", \"aaa\", \"cd\"]) == [\"ab\", \"cd\"]\nassert sorted_list_sum([\"ab\", \"a\", \"aaa\", \"cd\", \"eee\"]) == [\"ab\", \"cd\", \"eee\"]\n"]}
+{"task_id": "HumanEval/150", "completion": []}
+{"task_id": "HumanEval/151", "completion": ["\ndef double_the_difference(lst):\n", "\ndef double_the_difference(lst):\n    sum = 0\n    for num in lst:\n        if abs(num).is_integer() and num > 0:\n            if num % 2 != 0:\n                sum += num**2\n    return sum\n"]}
+{"task_id": "HumanEval/152", "completion": ["\ndef compare(game,guess):\n"]}
+{"task_id": "HumanEval/153", "completion": []}
+{"task_id": "HumanEval/154", "completion": []}
+{"task_id": "HumanEval/155", "completion": ["\ndef even_odd_count(num):\n"]}
+{"task_id": "HumanEval/156", "completion": ["\ndef int_to_mini_roman(number):\n"]}
+{"task_id": "HumanEval/157", "completion": ["\ndef right_angle_triangle(a, b, c):\n"]}
+{"task_id": "HumanEval/158", "completion": []}
+{"task_id": "HumanEval/159", "completion": []}
+{"task_id": "HumanEval/160", "completion": []}
+{"task_id": "HumanEval/161", "completion": []}
+{"task_id": "HumanEval/162", "completion": ["\ndef string_to_md5(text):\n", "\nstring_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n"]}
+{"task_id": "HumanEval/163", "completion": []}

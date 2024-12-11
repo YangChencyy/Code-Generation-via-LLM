@@ -1,0 +1,12 @@
+    content = """Give me python code to accomplish this function. Only provide me the code that is needed after the function definition in your response. Output in plain text without any formats.
+                For example,
+                For problem 'def return1():\n', you are supposed to response '    return 1'.
+                
+                For problem 'from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n   ### Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n     ###\n', 
+                you are supposed to response '    for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(numbers):\n            if idx != idx2:\n                distance = abs(elem - elem2)\n                if distance < threshold:\n                    return True\n\n    return False\n'. 
+                
+                For problem 'from typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    ### For a given list of input numbers, calculate Mean Absolute Deviation\n    around the mean of this dataset.\n    Mean Absolute Deviation is the average absolute difference between each\n    element and a centerpoint (mean in this case):\n    MAD = average | x - x_mean |\n    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])\n    1.0\n    ###\n'', 
+                you are supposed to response '    mean = sum(numbers) / len(numbers)\n    return sum(abs(x - mean) for x in numbers) / len(numbers)\n'"""
+
+    # , Do not include any explanation. Import libraries when necessary. Do not use recursion, use for loop if possible.
+    #             Only provide me the code that is needed after the function definition.
